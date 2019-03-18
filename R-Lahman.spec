@@ -4,7 +4,7 @@
 #
 Name     : R-Lahman
 Version  : 6.0.0
-Release  : 15
+Release  : 16
 URL      : https://cran.r-project.org/src/contrib/Lahman_6.0-0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Lahman_6.0-0.tar.gz
 Summary  : Sean 'Lahman' Baseball Database
@@ -16,7 +16,7 @@ Requires: R-vcd
 BuildRequires : R-dplyr
 BuildRequires : R-plyr
 BuildRequires : R-vcd
-BuildRequires : clr-R-helpers
+BuildRequires : buildreq-R
 
 %description
 a set of R data.frames. It uses the data on pitching, hitting and fielding
@@ -31,11 +31,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523312120
+export SOURCE_DATE_EPOCH=1552890187
 
 %install
+export SOURCE_DATE_EPOCH=1552890187
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1523312120
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -70,8 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library Lahman|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  Lahman || :
 
 
 %files
