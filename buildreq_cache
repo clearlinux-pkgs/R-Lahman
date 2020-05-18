@@ -1,5 +1,4 @@
 7.0.1
-R-dplyr
-R-plyr
-R-vcd
-util-linux
+R-car
+R-ggplot2
+R-reshape2
