@@ -4,7 +4,7 @@
 #
 Name     : R-Lahman
 Version  : 8.0.0
-Release  : 27
+Release  : 28
 URL      : https://cran.r-project.org/src/contrib/Lahman_8.0-0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Lahman_8.0-0.tar.gz
 Summary  : Sean 'Lahman' Baseball Database
