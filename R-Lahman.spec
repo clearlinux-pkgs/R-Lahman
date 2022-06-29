@@ -4,7 +4,7 @@
 #
 Name     : R-Lahman
 Version  : 10.0.1
-Release  : 45
+Release  : 46
 URL      : https://cran.r-project.org/src/contrib/Lahman_10.0-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Lahman_10.0-1.tar.gz
 Summary  : Sean 'Lahman' Baseball Database
